@@ -1,0 +1,11 @@
+{
+  "name": "rz-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio site with the purpose to showcase my work to prospective employers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Zavala",
+  "license": "ISC"
+}
