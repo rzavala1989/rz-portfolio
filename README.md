@@ -5,4 +5,4 @@ This portfolio site is built with HTML, CSS, and vanilla Javascript.
 
 The reason to not use any frameworks or libraries is to keep the code lightweight and easily maintainable. 
 
-The live app can be accessed at: 
+The live app can be accessed at: https://rzavala1989.github.io/rz-portfolio/
