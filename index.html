@@ -31,73 +31,70 @@
     />
     <link rel="stylesheet" href="default.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hover.css" />
   </head>
   <body>
     <header role="banner">
-      <h1>RICARDO MANUEL ZAVALA</h1>
-      <p id="headline">Software Engineer by the way of Las Vegas, NV</p>
-      <img
+      <div class="console-container">
+        <span id="text"></span>
+        <div class="console-underscore" id="console">&#95;</div>
+      </div>
+
+      <!-- <img
         class="collage"
         src="./images/collage-portfolio.jpg"
         alt="view of Toledo, San Antonio, Las Vgeas"
-      />
+      /> -->
+      <div class="collage"></div>
     </header>
     <nav role="navigation">
       <ul>
-        <li tabindex="0" class="nav-links">PROJECTS</li>
-        <li tabindex="0" class="nav-links">ABOUT</li>
-        <li tabindex="0" class="nav-links">CONTACT</li>
+        <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">
+          ABOUT
+        </li>
+        <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">
+          PROJECTS
+        </li>
+        <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">
+          CONTACT
+        </li>
       </ul>
     </nav>
-    <main role="main">
+    <main role="main" class="bg-default">
+      <section id="bio">
+        <h2>ABOUT ME</h2>
+        <div id="bio-info">
+          <img
+            id="profile-photo"
+            src="./images/headshot-1.jpg"
+            alt="profile photo"
+          />
+          <div id="bio-text">
+            <p>
+              Hello, all! My name is Ricardo and I am a fullstack software
+              engineer and recent graduate of the Full Stack Flex Career Path
+              bootcamp at Thinkful. My love for coding blossomed due to my
+              penchant for solving problems and seeing my visions play out to
+              completion. I cannot wait to see where my interests take me as a
+              programmer. I am currently studying Data Science in the Python
+              Language.
+            </p>
+            <p>
+              As for myself, I currently live in Las Vegas, NV. I was born in
+              Toledo, OH, and I have also spent significant time in San Antonio
+              and Austin, TX. I am a fiance, a father, and a man looking to make
+              a monumental change. I stay physically active by running on
+              various trails, playing basketball, and working out in the gym. I
+              stimulate my creativity through photography of cityscapes, and
+              broaden my horizons through travel (of the 'road trip' variety).
+              Occasionally I will test my luck at the casino, as I am also fond
+              of blackjack and poker.
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <h2>PROJECTS</h2>
-        <section class="project">
-          <div class="project-info">
-            <h3>Do Betr Business</h3>
-            <p>
-              A fullstack javascript application that helps business and
-              self-employed professionals to easiliy keep track of and tax
-              deductible expenses. This app appeals to Fortune 500 executives
-              and independent contractors alike.
-            </p>
-            <h4>Tools</h4>
-            <p>
-              <img src="./images/icon-react.png" alt="ReactJS" />
-              <img id="redux-img" src="./images/icon-redux.png" alt="Redux" />
-              <img src="./images/icon-nodejs.png" alt="NodeJS" />
-              <img src="./images/icon-express.png" alt="Express" />
-              <img src="./images/icon-mongodb.png" alt="MongoDB" />
-              <img
-                class="mongoose-img"
-                src="./images/icon-mongoose.png"
-                alt="Mongoose"
-              />
-              <img src="./images/icon-js.png" alt="Javascript" />
-            </p>
-          </div>
-          <a
-            class="live-app-link"
-            href="https://desolate-taiga-15973.herokuapp.com/"
-          >
-            <img
-              class="project-screenshot"
-              src="./images/Screenshot_DBB.png"
-              alt="screenshot of DBB app"
-            />
-            <span class="view-project">View Live App</span>
-          </a>
-          <div class="project-links">
-            <a
-              class="client-code"
-              href="https://github.com/rzavala1989/betr-business-client-final"
-              >Client Repo</a
-            >
-            <a href="https://github.com/rzavala1989/betr-business-server"
-              >API Repo</a
-            >
-          </div>
-        </section>
         <section class="project">
           <div class="project-info">
             <h3>MYUZIK</h3>
@@ -179,38 +176,52 @@
             >
           </div>
         </section>
-      </section>
-      <section id="bio">
-        <h2>ABOUT ME</h2>
-        <div id="bio-info">
-          <img
-            id="profile-photo"
-            src="./images/headshot-1.jpg"
-            alt="profile photo"
-          />
-          <div id="bio-text">
+        <section class="project">
+          <div class="project-info">
+            <h3>Do Betr Business</h3>
             <p>
-              Hello, all! My name is Ricardo and I am a fullstack software
-              engineer and recent graduate of the Full Stack Flex Career Path
-              bootcamp at Thinkful. My love for coding blossomed due to my
-              penchant for solving problems and seeing my visions play out to
-              completion. I cannot wait to see where my interests take me as a
-              programmer. I am currently studying Data Science in the Python
-              Language.
+              A fullstack javascript application that helps business and
+              self-employed professionals to easiliy keep track of and tax
+              deductible expenses. This app appeals to Fortune 500 executives
+              and independent contractors alike.
             </p>
+            <h4>Tools</h4>
             <p>
-              As for myself, I currently live in Las Vegas, NV. I was born in
-              Toledo, OH, and I have also spent significant time in San Antonio
-              and Austin, TX. I am a fiance, a father, and a man looking to make
-              a monumental change. I stay physically active by running on
-              various trails, playing basketball, and working out in the gym. I
-              stimulate my creativity through photography of cityscapes, and
-              broaden my horizons through travel (of the 'road trip' variety).
-              Occasionally I will test my luck at the casino, as I am also fond
-              of blackjack and poker.
+              <img src="./images/icon-react.png" alt="ReactJS" />
+              <img id="redux-img" src="./images/icon-redux.png" alt="Redux" />
+              <img src="./images/icon-nodejs.png" alt="NodeJS" />
+              <img src="./images/icon-express.png" alt="Express" />
+              <img src="./images/icon-mongodb.png" alt="MongoDB" />
+              <img
+                class="mongoose-img"
+                src="./images/icon-mongoose.png"
+                alt="Mongoose"
+              />
+              <img src="./images/icon-js.png" alt="Javascript" />
             </p>
           </div>
-        </div>
+          <a
+            class="live-app-link"
+            href="https://desolate-taiga-15973.herokuapp.com/"
+          >
+            <img
+              class="project-screenshot"
+              src="./images/Screenshot_DBB.png"
+              alt="screenshot of DBB app"
+            />
+            <span class="view-project">View Live App</span>
+          </a>
+          <div class="project-links">
+            <a
+              class="client-code"
+              href="https://github.com/rzavala1989/betr-business-client-final"
+              >Client Repo</a
+            >
+            <a href="https://github.com/rzavala1989/betr-business-server"
+              >API Repo</a
+            >
+          </div>
+        </section>
       </section>
     </main>
     <footer role="content-info">
