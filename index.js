@@ -118,7 +118,7 @@ adjustProjectLinks();
 consoleText(
   ["My name is Ricardo", "A Software Engineer...", "From Las Vegas"],
   "text",
-  ["tomato", "rebeccapurple", "lightblue"]
+  ["tomato", "rebeccapurple", "navy"]
 );
 
 //banner animation
