@@ -108,8 +108,8 @@ footer > ul {
 }
 
 .collage {
-  height: 50vh;
-  max-height: 50vh;
+  height: 40vh;
+  max-height: 40vh;
   display: block;
   z-index: -2;
 }
