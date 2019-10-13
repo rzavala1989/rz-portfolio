@@ -51,9 +51,9 @@ nav > ul {
 }
 
 main {
-  padding: 0 1em;
+  padding: 0 1em 2em;
   background-color: white;
-  /* margin: 0 -0.5em; */
+  /* margin: 0 1em; */
 }
 
 h1 {
