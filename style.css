@@ -16,7 +16,9 @@ header {
   left: 0;
   z-index: -1;
   width: 100%;
-  max-height: 90vh;
+  max-height: 50vh;
+  background: url("./images/background-blur.jpg");
+  background-size: cover;
 }
 
 header,
@@ -434,10 +436,7 @@ footer > ul {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
-body {
-  background: url("./images/background-blur.jpg");
-  background-size: 100%;
-}
+
 .hidden {
   opacity: 0;
 }
