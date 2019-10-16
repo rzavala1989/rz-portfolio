@@ -11,8 +11,6 @@ function setYear() {
   const currentYear = new Date().getFullYear();
   document.getElementById("footer-text").textContent += ` ${currentYear}`;
 }
-
-//Scroll to section from nav link
 function scrollToSection(target) {
   let navElement;
   if (target.textContent === "PROJECTS") {
@@ -27,7 +25,6 @@ function scrollToSection(target) {
   const topLoc = navElement.offsetTop + headerHeight - padding;
   window.scroll({ top: topLoc, left: 0, behavior: "smooth" });
 }
-
 //Calculate & set heights when the window is loaded or resized
 function setHeights() {
   navTop = navbar.offsetTop;
