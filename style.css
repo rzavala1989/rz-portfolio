@@ -287,7 +287,8 @@ footer > ul {
 }
 
 #passport-img,
-#redux-img {
+#redux-img,
+#bootstrap-img {
   width: 48px;
 }
 .mongoose-img {
