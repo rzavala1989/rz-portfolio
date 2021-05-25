@@ -315,7 +315,7 @@ footer > ul {
   opacity: 0;
   padding: 0.2em 0;
   color: white;
-  background-color: rgba(13, 32, 117, 0.7);
+  background-color: rgba(117, 13, 13, 0.7);
   font-size: 2em;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
