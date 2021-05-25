@@ -10,9 +10,11 @@
     content="Node.js,NodeJS,Express,JavaScript,Python,MongoDB,Mongoose,React,Github,HTML,CSS,SCSS" />
   <meta name="author" content="Ricardo Zavala" />
   <title>ZAVALA</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" /> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="default.css" />
@@ -21,23 +23,47 @@
 </head>
 
 <body>
-  <header role="banner">
-    <div class="console-container">
-      <span id="text"></span>
-      <div class="console-underscore" id="console">&#95;</div>
-    </div>
-    <div class="collage"></div>
-  </header>
-  <nav role="navigation">
+  <header class="main_h">
+
+    <div class="row">
+        <a class="logo" href="#">R/Z</a>
+
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav role="navigation">
+            <ul>
+              <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">ABOUT</li>
+              <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">PROJECTS</li>
+              <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">CONTACT</li>
+            </ul>
+        </nav>
+
+    </div> 
+
+</header>
+<div class="hero">
+
+  <h1><span>ZAVALA</span><br>Let's Go To Work</h1>
+
+  <div class="mouse">
+      <span></span>
+  </div>
+
+</div>
+  <!-- <nav role="navigation">
     <ul>
       <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">ABOUT</li>
       <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">PROJECTS</li>
       <li tabindex="0" class="nav-links hvr-skew hvr-overline-from-left">CONTACT</li>
     </ul>
-  </nav>
+  </nav> -->
   <main role="main" class="bg-default">
     <section id="bio">
-      <h2 class="effect-shine">ABOUT ME</h2>
+      <h2 id="about-header" class="effect-shine">ABOUT ME</h2>
       <div id="bio-info">
         <img id="profile-photo" src="./images/headshot-blackandwhite.jpg" alt="profile photo" />
         <div id="bio-text">
@@ -151,36 +177,49 @@
       </section>
       <section class="project">
         <div class="project-info">
-          <h3>NYR App</h3>
+          <h3>Zaxximo</h3>
           <p>
-            Short for New Years Resolution App, NYR allows users to post and
-            share their own New Years resolutions, with the hopes of inspiring
-            others to better themselves as well.
+            Zaximo is a task management app which allows admins to create staff, set tasks/schedules, as well as task deletion/reassignment. Also, this app is hooked onto the same server as corresponding React Native App for employees to log in and have access to their tasks.
           </p>
           <h4>Tools</h4>
           <p>
+            <img src="./images/icon-react.png" alt="ReactJS" />
+            <img id="redux-img" src="./images/icon-redux.png" alt="Redux" />
+            <img id="bootstrap-img" src="./images/matcss-min.png" alt="Bootstrap-4" />
             <img src="./images/icon-nodejs.png" alt="NodeJS" />
             <img src="./images/icon-express.png" alt="Express" />
             <img src="./images/icon-mongodb.png" alt="MongoDB" />
             <img class="mongoose-img" src="./images/icon-mongoose.png" alt="Mongoose" />
-            <img id="passport-img" src="./images/icon-passport.png" alt="Passport" />
             <img src="./images/icon-js.png" alt="Javascript" />
           </p>
         </div>
-        <a class="live-app-link" href="https://rocky-journey-81489.herokuapp.com/">
-          <img class="project-screenshot" src="./images/Screenshot_NYR.png" alt="screenshot of NYR app" />
+        <a class="live-app-link" href="https://arcane-woodland-70033.herokuapp.com/">
+          <img class="project-screenshot" src="./images/Screenshot_Zaxximo.png" alt="screenshot of Zaxximo" />
           <span class="view-project">View Live App</span>
         </a>
         <div class="project-links">
-          <a href="https://github.com/rzavala1989/NYR-App-Capstone" target="_blank" rel="noopener noreferrer">View
+          <a href="https://github.com/rzavala1989/zaxximo-main-master" target="_blank" rel="noopener noreferrer">View
             Repo</a>
         </div>
       </section>
     </section>
   </main>
   <footer role="content-info">
-    <h3>CONTACT ME</h3>
-    <ul id="contact-list">
+    <article><div class="title-deco-container deco-container">
+      <div class="content content-default"><h3 id="footer-header">CONTACT ME</h3></div>
+      <div class="content-dot"></div>
+      <div class="main-diamond-outer"></div>
+      <div class="main-diamond-inner"></div>
+      <div class="mid-diamond-left"></div>
+      <div class="mid-diamond-right"></div>
+      <div class="small-diamond-left-top"></div>
+      <div class="small-diamond-left-bottom"></div>
+      <div class="small-diamond-right-top"></div>
+      <div class="small-diamond-right-bottom"></div>
+    </div></article>
+    
+    
+    <article id="contact-article"><ul id="contact-list">
       <li class="contact-link">
         <a href="https://github.com/rzavala1989" target="_blank" rel="noopener noreferrer" alt="Github" id="github">
           <i class="fab fa-github"></i>
@@ -198,10 +237,12 @@
         </a>
       </li>
     </ul>
-    <p id="contact-text">Get in touch</p>
+    <p id="contact-text"><strong>Get in touch</strong></p>
     <p id="footer-text">&copy; Ricardo Zavala</p>
+  </article>
   </footer>
   <script type="text/javascript" src="index.js"></script>
+  
 </body>
 
 </html>

@@ -112,57 +112,40 @@ document
 //Functions executed immediately on page load
 adjustProjectLinks();
 
-consoleText(
-  ["My name is Ricardo", "A Software Engineer...", "From Las Vegas"],
-  "text",
-  ["tomato", "rebeccapurple", "navy"]
-);
 
-//banner animation
+// Sticky Header
+$(window).scroll(function() {
 
-function consoleText(words, id, colors) {
-  if (colors === undefined) colors = ["#fff"];
-  var visible = true;
-  var con = document.getElementById("console");
-  var letterCount = 1;
-  var x = 1;
-  var waiting = false;
-  var target = document.getElementById(id);
-  target.setAttribute("style", "color:" + colors[0]);
-  window.setInterval(function() {
-    if (letterCount === 0 && waiting === false) {
-      waiting = true;
-      target.innerHTML = words[0].substring(0, letterCount);
-      window.setTimeout(function() {
-        var usedColor = colors.shift();
-        colors.push(usedColor);
-        var usedWord = words.shift();
-        words.push(usedWord);
-        x = 1;
-        target.setAttribute("style", "color:" + colors[0]);
-        letterCount += x;
-        waiting = false;
-      }, 1000);
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-        waiting = false;
-      }, 1000);
-    } else if (waiting === false) {
-      target.innerHTML = words[0].substring(0, letterCount);
-      letterCount += x;
-    }
-  }, 120);
-  window.setInterval(function() {
-    if (visible === true) {
-      con.className = "console-underscore hidden";
-      visible = false;
-    } else {
-      con.className = "console-underscore";
+  if ($(window).scrollTop() > 100) {
+      $('.main_h').addClass('sticky');
+  } else {
+      $('.main_h').removeClass('sticky');
+  }
+});
 
-      visible = true;
-    }
-  }, 400);
-}
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+  if ($('.main_h').hasClass('open-nav')) {
+      $('.main_h').removeClass('open-nav');
+  } else {
+      $('.main_h').addClass('open-nav');
+  }
+});
+
+$('.main_h li a').click(function() {
+  if ($('.main_h').hasClass('open-nav')) {
+      $('.navigation').removeClass('open-nav');
+      $('.main_h').removeClass('open-nav');
+  }
+});
+
+// navigation scroll lijepo radi materem
+$('nav a').click(function(event) {
+  var id = $(this).attr("href");
+  var offset = 70;
+  var target = $(id).offset().top - offset;
+  $('html, body').animate({
+      scrollTop: target
+  }, 500);
+  event.preventDefault();
+});
