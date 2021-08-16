@@ -355,6 +355,9 @@ footer > ul {
   color: rgb(255, 255, 255);
   background: rgba(80, 76, 87, 0.651);
 }
+#firebase{
+  width:54px;
+}
 
 .client-code {
   margin-right: 0.4em;
